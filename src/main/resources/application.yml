@@ -1,0 +1,16 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: Kafka-Consumer-Microservice
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+
+kafka:
+  bootstrap-servers: 10.0.0.100:9092
+  topic:
+    customersTopic: CustomersTopic
